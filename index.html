@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StenSaxPåse Game</title>
+    <script src="./Js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sten Sax Påse</h1>
+    </header>
+
+
+    <div class="nameBox">
+    <label>Skriv in ditt namn:</label><br>
+    <input type="text" id="myText" placeholder="Name:">
+    <button onclick="myFunction()">ENTER</button>
+    <button onClick="window.location.reload();">CLEAR</button>
+    </div>
+    
+    
+    <div class="choices">
+        <button class="choice" data-selection="paper"><img src="img/påse.png" alt=""></button>
+        <button class="choice" data-selection="scissors"><img src="img/sax.png" alt=""></button>
+        <button class="choice" data-selection="rock"><img src="img/sten.png" alt=""></button>
+
+    </div>
+   
+    <div class="results">
+        
+        <div>
+            <p id="playerName"></p>
+            <span class="results-score"data-your-score>0</span> </span>
+
+        </div>
+        <div data-final-column>
+            <p>Computer</p>
+            <span class="results-score" data-computer-score>0</span>
+        </div>
+
+    </div>
+
+</body>
+</html>
